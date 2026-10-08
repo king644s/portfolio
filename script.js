@@ -161,7 +161,7 @@ else {
 const lines = [
   ['c', '$ whoami'], ['', 'vatsal soni — senior full stack developer'], ['m', ''],
   ['c', '$ cat stack.txt'], ['y', 'frontend  '], ['', 'React · Next.js · TypeScript · GSAP'],
-  ['y', 'backend   '], ['', 'Node.js · Express · GraphQL · MySQL · MongoDB'],
+  ['y', 'backend   '], ['', 'Node.js · Express · MySQL · MongoDB'],
   ['y', 'cloud     '], ['', 'AWS · GCP · Ubuntu · Coolify · Cloudflare'], ['m', ''],
   ['c', '$ status'], ['', 'running an in-house CRM server ✓'],
 ];
