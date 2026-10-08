@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vatsal Soni — Full Stack Developer</title>
+<meta name="description" content="Vatsal Soni is a Senior Full Stack Developer in Mumbai with 4+ years of experience in React, Next.js, Node.js, TypeScript, GSAP and AWS. Also builds self-hosted infrastructure with Ubuntu, Coolify and Cloudflare Tunnel.">
+<meta name="author" content="Vatsal Soni">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#07090c">
+<link rel="canonical" href="https://vatsalsoni.in/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vatsal Soni">
+<meta property="og:title" content="Vatsal Soni — Senior Full Stack Developer (React, Node.js, AWS)">
+<meta property="og:description" content="Portfolio of Vatsal Soni: GSAP-driven frontends, compliance-grade Node.js backends and self-hosted cloud infrastructure.">
+<meta property="og:url" content="https://vatsalsoni.in/">
+<meta property="og:image" content="https://vatsalsoni.in/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vatsal Soni — Senior Full Stack Developer">
+<meta name="twitter:description" content="React, Next.js, Node.js, TypeScript, GSAP, AWS and self-hosted infrastructure.">
+<meta name="twitter:image" content="https://vatsalsoni.in/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://vatsalsoni.in/#person",
+      "name": "Vatsal Soni",
+      "url": "https://vatsalsoni.in/",
+      "email": "mailto:sonivatsal3@gmail.com",
+      "jobTitle": "Senior Full Stack Developer",
+      "description": "Full stack developer specialising in React, Next.js, Node.js, TypeScript, GSAP and AWS.",
+      "address": {"@type": "PostalAddress", "addressLocality": "Mumbai", "addressCountry": "IN"},
+      "sameAs": ["https://linkedin.com/in/vatssoni"],
+      "knowsAbout": ["React", "Next.js", "Node.js", "TypeScript", "GSAP", "AWS", "GCP", "Cloudflare Tunnel", "Coolify", "Self-hosting"],
+      "alumniOf": [
+        {"@type": "CollegeOrUniversity", "name": "Mumbai University (TIMSCDR)"},
+        {"@type": "CollegeOrUniversity", "name": "UPGASC"}
+      ],
+      "worksFor": {"@type": "Organization", "name": "Jio Creative Labs"}
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vatsalsoni.in/#website",
+      "url": "https://vatsalsoni.in/",
+      "name": "Vatsal Soni — Portfolio",
+      "publisher": {"@id": "https://vatsalsoni.in/#person"}
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<div class="progress" id="progress"></div>
+<div class="glow" id="glow"></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="logo">vatsal<span>.</span>soni</a>
+  <nav id="menu">
+    <a href="#about">About</a>
+    <a href="#services">What I do</a>
+    <a href="#homelab">Homelab</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="btn-small">Contact</a>
+  </nav>
+  <div class="nav-tools">
+    <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">◐</button>
+    <button id="burger" class="icon-btn burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="mono eyebrow reveal"><span class="dot"></span> Mumbai, India · Available for new work</p>
+      <h1 class="reveal">Vatsal<br>Soni<span class="accent">.</span></h1>
+      <p class="role reveal">I build <span id="typed" class="grad"></span><span class="caret">|</span></p>
+      <p class="lead reveal">Senior Full Stack Developer with 4+ years shipping NDA-bound, compliance-grade products for media, fintech and e-commerce — and the person who also racks, configures and secures the server they run on.</p>
+      <div class="cta reveal">
+        <a href="#projects" class="btn">View my work</a>
+        <a href="Vatsal_Soni.pdf" class="btn ghost" download>Download CV ↓</a>
+        <a href="#contact" class="btn ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <aside class="term reveal" aria-label="Profile summary">
+      <div class="term-bar"><i></i><i></i><i></i><span class="mono">vatsal@homelab ~ </span></div>
+      <pre class="mono" id="termOut"></pre>
+    </aside>
+  </div>
+
+  <div class="wrap">
+    <ul class="stats reveal">
+      <li><b data-count="4" data-suffix="+">4+</b><span>years of professional experience</span></li>
+      <li><b data-count="5" data-suffix="">5</b><span>companies &amp; clients served</span></li>
+      <li><b data-count="99" data-suffix="%+">99%+</b><span>production uptime on AWS / GCP</span></li>
+      <li><b data-count="5" data-suffix="+">5+</b><span>apps shipped from greenfield (3 Minds)</span></li>
+      <li><b>Tier 1</b><span>brand — Jio Creative Labs</span></li>
+    </ul>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>React.js</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>GSAP</span><span>AWS</span><span>GCP</span><span>MySQL</span><span>MongoDB</span><span>GraphQL</span><span>Redux Toolkit</span><span>Ubuntu</span><span>Coolify</span><span>Garage S3</span><span>Cloudflare Tunnel</span><span>Cloudflare Access</span><span>Drupal</span><span>Strapi</span>
+      <span>React.js</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>GSAP</span><span>AWS</span><span>GCP</span><span>MySQL</span><span>MongoDB</span><span>GraphQL</span><span>Redux Toolkit</span><span>Ubuntu</span><span>Coolify</span><span>Garage S3</span><span>Cloudflare Tunnel</span><span>Cloudflare Access</span><span>Drupal</span><span>Strapi</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="grid2">
+      <div>
+        <p class="mono label">01 / About</p>
+        <h2 class="reveal">Frontend craft. Backend rigour. Infrastructure ownership.</h2>
+      </div>
+      <div class="prose reveal">
+        <p>I'm a full stack developer who is comfortable at every layer of a product — from a GSAP scroll timeline in the browser, to an encrypted data pipeline in the API, to the EC2 instance or in-house server it all runs on.</p>
+        <p>My work has been for a Tier 1 media brand, government-linked e-commerce, fintech and enterprise clients, so I'm used to NDAs, security reviews, compliance requirements and stakeholders from Security, Architecture and Network Ops.</p>
+        <p>I'm trusted with direct client communication — gathering requirements, presenting progress, and turning business needs into technical specs — and I like owning a product from first call to production deployment.</p>
+      </div>
+    </div>
+
+    <div class="cards four">
+      <article class="card reveal"><div class="ico">✦</div><h3>Rare frontend depth</h3><p>Advanced GSAP animation, 3D integrations and performance-minded interfaces that still ship on schedule.</p></article>
+      <article class="card reveal"><div class="ico">⚙</div><h3>Robust backends</h3><p>REST/GraphQL APIs with Node and Express, JWT auth, validation, SQL and NoSQL data layers.</p></article>
+      <article class="card reveal"><div class="ico">☁</div><h3>Hands-on cloud</h3><p>AWS &amp; GCP provisioning, repeatable infra patterns, 99%+ uptime — plus a self-hosted stack I run myself.</p></article>
+      <article class="card reveal"><div class="ico">⚑</div><h3>Product ownership</h3><p>Solo delivery, client relationships and deployment owned end to end, under NDA and on deadline.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="alt">
+  <div class="wrap">
+    <p class="mono label">02 / What I do</p>
+    <h2 class="reveal">Four areas I can take off your plate</h2>
+    <div class="services">
+      <article class="svc reveal">
+        <span class="num mono">01</span>
+        <h3>Frontend &amp; Motion</h3>
+        <p>Responsive, accessible interfaces in React and Next.js with TypeScript. Scroll-driven GSAP experiences, 3D elements, and state management with Redux Toolkit &amp; RTK Query.</p>
+        <p class="chips"><i>React</i><i>Next.js</i><i>GSAP</i><i>MUI</i><i>SCSS</i></p>
+      </article>
+      <article class="svc reveal">
+        <span class="num mono">02</span>
+        <h3>Backend &amp; APIs</h3>
+        <p>Clean REST and GraphQL APIs, role-based dashboards, real-time features via Pusher, file uploads, validation with Joi/YUP, and SQL/NoSQL modelling with Sequelize and Mongoose.</p>
+        <p class="chips"><i>Node.js</i><i>Express</i><i>MySQL</i><i>MongoDB</i><i>JWT</i></p>
+      </article>
+      <article class="svc reveal">
+        <span class="num mono">03</span>
+        <h3>Cloud &amp; Self-hosting</h3>
+        <p>AWS (EC2, RDS, S3, Route 53, IAM, Elastic IP) and GCP deployments, PM2 &amp; CertBot setups — and full self-hosted stacks with Ubuntu, Coolify, Garage S3 and Cloudflare Zero Trust.</p>
+        <p class="chips"><i>AWS</i><i>GCP</i><i>Coolify</i><i>Cloudflare</i><i>Ubuntu</i></p>
+      </article>
+      <article class="svc reveal">
+        <span class="num mono">04</span>
+        <h3>Security &amp; Compliance</h3>
+        <p>AES-encrypted data pipelines, automated data purging for retention policies, identity-gated access with Cloudflare Access, and coordination with Security &amp; Compliance teams.</p>
+        <p class="chips"><i>AES</i><i>Data purging</i><i>Zero Trust</i><i>reCAPTCHA</i></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOMELAB ============ -->
+<section id="homelab">
+  <div class="wrap">
+    <p class="mono label">03 / Featured build · Infrastructure</p>
+    <h2 class="reveal">An in-house server for our internal CRM</h2>
+    <p class="sub reveal">I set up and run the entire local server that hosts the company's internal CRM — from the bare Ubuntu install to identity-gated public access — and I also test the CRM running on it. Click through the layers below.</p>
+
+    <!-- animated flow -->
+    <div class="diagram reveal">
+      <svg viewBox="0 0 960 360" role="img" aria-labelledby="dt">
+        <title id="dt">Traffic flows from the user or AI test agent through Cloudflare Access and a Cloudflare Tunnel into the Ubuntu server running Coolify, the CRM, Garage S3 and the Garage UI.</title>
+        <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+
+        <g class="node"><rect x="10" y="130" width="130" height="80" rx="12"/><text x="75" y="165" class="t">Internet</text><text x="75" y="187" class="s">staff · AI test agent</text></g>
+        <g class="node edge"><rect x="200" y="100" width="190" height="140" rx="12"/><text x="295" y="135" class="t">Cloudflare Access</text><text x="295" y="162">Service Auth policy</text><text x="295" y="184">Email allow policy</text><text x="295" y="212" class="s">identity checked first</text></g>
+        <g class="node edge"><rect x="450" y="130" width="130" height="80" rx="12"/><text x="515" y="165" class="t">Tunnel</text><text x="515" y="187" class="s">route → service</text></g>
+
+        <rect class="host" x="640" y="14" width="310" height="332" rx="16"/>
+        <text x="656" y="40" class="s lft">Ubuntu server · in-house</text>
+        <g class="node"><rect x="660" y="56" width="270" height="62" rx="10"/><text x="795" y="84" class="t">Coolify</text><text x="795" y="104" class="s">deploys &amp; manages apps</text></g>
+        <g class="node"><rect x="660" y="132" width="270" height="62" rx="10"/><text x="795" y="160" class="t">Internal CRM</text><text x="795" y="180" class="s">the app being tested</text></g>
+        <g class="node"><rect x="660" y="208" width="130" height="62" rx="10"/><text x="725" y="236" class="t">Garage</text><text x="725" y="256" class="s">S3 buckets</text></g>
+        <g class="node"><rect x="800" y="208" width="130" height="62" rx="10"/><text x="865" y="236" class="t">Garage UI</text><text x="865" y="256" class="s">custom · SSO-gated</text></g>
+        <text x="795" y="306" class="s">no inbound ports opened</text>
+
+        <g class="line"><path d="M140 170H196" marker-end="url(#arr)"/><path d="M390 170H446" marker-end="url(#arr)"/><path d="M580 170H636" marker-end="url(#arr)"/></g>
+        <circle class="pulse" r="5" cx="140" cy="170"/>
+      </svg>
+    </div>
+
+    <!-- interactive layers -->
+    <div class="lab reveal">
+      <ul class="lab-tabs" id="labTabs" role="tablist"></ul>
+      <div class="lab-panel" id="labPanel" role="tabpanel" aria-live="polite"></div>
+    </div>
+
+    <!-- policies -->
+    <h3 class="sub-h reveal">Custom Garage UI — two Cloudflare Access policies</h3>
+    <p class="sub reveal">Garage doesn't ship with the login experience I wanted, so I built my own UI for it and put it behind Cloudflare-style SSO. Two policies cover the two kinds of callers:</p>
+    <div class="cards two">
+      <article class="card policy reveal">
+        <span class="tag">Policy 1</span>
+        <h3>Service Authentication</h3>
+        <p>For non-human clients. A service presents its credentials with the request and Cloudflare Access validates them at the edge — no interactive login. This is the path that let me authenticate an AI model against the protected routes to test the CRM.</p>
+        <ul><li>Machine-to-machine access</li><li>Credentials checked before the request reaches the server</li><li>Revocable without touching the app</li></ul>
+      </article>
+      <article class="card policy reveal">
+        <span class="tag">Policy 2</span>
+        <h3>Email Allow</h3>
+        <p>For people. Only email addresses on the allow-list can sign in; everyone else is stopped at Cloudflare and never sees the Garage UI or the CRM.</p>
+        <ul><li>SSO-style login for staff</li><li>Explicit allow-list of identities</li><li>One consistent login across tools</li></ul>
+      </article>
+    </div>
+
+    <!-- AI test flow -->
+    <h3 class="sub-h reveal">How I tested the CRM with an AI model</h3>
+    <ol class="steps">
+      <li class="reveal"><b>1</b><div><h4>Create a tunnel route</h4><p>Expose the CRM through Cloudflare Tunnel on a dedicated hostname.</p></div></li>
+      <li class="reveal"><b>2</b><div><h4>Protect the access point</h4><p>Attach an Access application and validate who is allowed through.</p></div></li>
+      <li class="reveal"><b>3</b><div><h4>Authenticate the AI model</h4><p>Use an access code / service credential so the model passes the Service Auth policy.</p></div></li>
+      <li class="reveal"><b>4</b><div><h4>Test &amp; iterate</h4><p>Exercise CRM flows through the real, protected route and fix what breaks.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="alt">
+  <div class="wrap">
+    <p class="mono label">04 / Experience</p>
+    <h2 class="reveal">Career timeline</h2>
+    <ol class="timeline">
+
+      <li class="reveal">
+        <div class="when mono">Jun 2024 — Present<small>Mumbai · Contract</small><em class="now">current</em></div>
+        <div class="what">
+          <h3>Full Stack Developer <span>· Jio Creative Labs</span></h3>
+          <p class="blurb">Tier 1 media brand. NDA-bound work with UI/UX, Art, Security, Compliance, Architecture and Network Ops teams.</p>
+          <ul>
+            <li>Architected and shipped <b>2 NDA-bound full stack applications</b> end-to-end — immersive, responsive, visually rich experiences delivered on schedule.</li>
+            <li>Engineered <b>AES-encrypted data pipelines</b> with automated purging, meeting data-retention, privacy and regulatory standards across multiple governance frameworks.</li>
+            <li>Owned cloud infrastructure on <b>AWS and GCP</b> (EC2, RDS, S3, Route 53, Elastic IP), sustaining <b>99%+ production uptime</b>.</li>
+            <li>Built <b>jiocreativelabs.com</b> with advanced GSAP scroll animations and integrated 3D elements.</li>
+          </ul>
+          <p class="chips"><i>React</i><i>Node.js</i><i>GSAP</i><i>3D</i><i>AES</i><i>AWS</i><i>GCP</i></p>
+        </div>
+      </li>
+
+      <li class="reveal">
+        <div class="when mono">Jan 2024 — Jun 2024<small>Mumbai · Contract</small></div>
+        <div class="what">
+          <h3>Full Stack Developer <span>· Finnowski</span></h3>
+          <p class="blurb">Government-linked e-commerce enablement platform, delivered solo under strict NDA in a 6-month contract.</p>
+          <ul>
+            <li>Delivered a full-featured <b>vendor dashboard</b>: product catalogue management, real-time order tracking and core seller operations.</li>
+            <li>Owned the whole stack alone — <b>Next.js + MUI</b> frontend; <b>Node.js, Express, REST API and MySQL</b> backend.</li>
+          </ul>
+          <p class="chips"><i>Next.js</i><i>MUI</i><i>Node.js</i><i>Express</i><i>MySQL</i></p>
+        </div>
+      </li>
+
+      <li class="reveal">
+        <div class="when mono">Nov 2022 — Dec 2023<small>Mumbai</small></div>
+        <div class="what">
+          <h3>Full Stack Developer <span>· 3 Minds Digital</span></h3>
+          <p class="blurb">Agency delivery with close client collaboration and weekly feedback loops.</p>
+          <ul>
+            <li>Delivered <b>5+ web and mobile applications</b> from greenfield with React, Node.js, MongoDB and MySQL — each on deadline.</li>
+            <li>Spearheaded <b>AWS deployments</b> (EC2, S3, Route 53, RDS) across multiple production environments, establishing repeatable patterns that cut setup time on each successive project.</li>
+            <li>Designed RESTful APIs with <b>Express, Sequelize and Mongoose</b>; active in code reviews, debugging sessions and architecture planning.</li>
+            <li>Ran direct client channels: requirements, progress demos and translating business needs into technical specs.</li>
+          </ul>
+          <p class="chips"><i>React</i><i>Node.js</i><i>MongoDB</i><i>MySQL</i><i>AWS</i><i>Sequelize</i></p>
+        </div>
+      </li>
+
+      <li class="reveal">
+        <div class="when mono">Jul 2022 — Oct 2022<small>Mumbai</small></div>
+        <div class="what">
+          <h3>Web Developer <span>· Aurus IT Solutions</span></h3>
+          <ul><li>Built interactive <b>HTML/CSS/JavaScript prototypes</b> for client presentations and integrated third-party APIs to extend platform functionality and improve user engagement.</li></ul>
+          <p class="chips"><i>HTML</i><i>CSS</i><i>JavaScript</i><i>REST APIs</i></p>
+        </div>
+      </li>
+
+      <li class="reveal">
+        <div class="when mono">Jun 2021 — Jun 2022<small>Mumbai</small></div>
+        <div class="what">
+          <h3>MERN Stack Developer <span>· Contriver Tech</span></h3>
+          <ul><li>Independently built full stack <b>MERN applications</b>, developing strong product-ownership instincts alongside cross-functional collaboration.</li></ul>
+          <p class="chips"><i>MongoDB</i><i>Express</i><i>React</i><i>Node.js</i></p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <p class="mono label">05 / Projects</p>
+    <h2 class="reveal">Selected work</h2>
+    <div class="filters reveal" id="filters">
+      <button class="on" data-f="all">All</button>
+      <button data-f="frontend">Frontend &amp; Motion</button>
+      <button data-f="fullstack">Full stack</button>
+      <button data-f="infra">Infrastructure</button>
+      <button data-f="fintech">Fintech</button>
+    </div>
+    <div class="cards two" id="projGrid"></div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="alt">
+  <div class="wrap">
+    <p class="mono label">06 / Skills</p>
+    <h2 class="reveal">Technical toolbox</h2>
+    <div class="skills">
+      <div class="skill-box reveal"><h3>Frontend</h3><p class="chips"><i>React.js</i><i>Next.js</i><i>TypeScript</i><i>GSAP</i><i>Redux Toolkit</i><i>RTK Query</i><i>MUI</i><i>Bootstrap</i><i>Sass/SCSS</i><i>YUP</i></p></div>
+      <div class="skill-box reveal"><h3>Backend</h3><p class="chips"><i>Node.js</i><i>Express.js</i><i>GraphQL</i><i>REST API</i><i>MySQL</i><i>MongoDB</i><i>Sequelize ORM</i><i>Mongoose</i><i>JWT</i><i>Bcrypt</i><i>Pusher</i><i>Multer</i><i>Joi</i><i>Strapi CMS</i></p></div>
+      <div class="skill-box reveal"><h3>Cloud &amp; DevOps</h3><p class="chips"><i>AWS EC2</i><i>S3</i><i>Route 53</i><i>RDS</i><i>IAM</i><i>Elastic IP</i><i>GCP</i><i>Azure</i><i>PM2</i><i>CertBot</i><i>reCAPTCHA</i></p></div>
+      <div class="skill-box reveal"><h3>Self-hosting &amp; Zero Trust</h3><p class="chips"><i class="hl">Ubuntu Server</i><i class="hl">Coolify</i><i class="hl">Garage S3</i><i class="hl">Cloudflare Tunnel</i><i class="hl">Cloudflare Access</i><i class="hl">Service Auth / Email policies</i></p></div>
+      <div class="skill-box reveal"><h3>Security &amp; Other</h3><p class="chips"><i>AES encryption</i><i>Compliance systems</i><i>Automated data purging</i><i>Drupal CMS</i><i>Stakeholder management</i><i>Client communication</i></p></div>
+    </div>
+
+    <h3 class="sub-h reveal">Education</h3>
+    <div class="cards two">
+      <article class="card reveal"><span class="tag">2021 – 2022</span><h3>Master of Computer Applications</h3><p>TIMSCDR, Mumbai University</p><p class="stack mono">CGPA 8.7 / 10</p></article>
+      <article class="card reveal"><span class="tag">2017 – 2020</span><h3>BSc Information Technology</h3><p>UPGASC</p><p class="stack mono">CGPA 7.46 / 10</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap center">
+    <p class="mono label">07 / Contact</p>
+    <h2 class="reveal big">Let's build something<span class="accent">.</span></h2>
+    <p class="sub reveal">Open to full stack, frontend-animation and cloud / self-hosting work. Reach out and I'll reply quickly.</p>
+    <div class="cta reveal">
+      <a class="btn" href="mailto:sonivatsal3@gmail.com">sonivatsal3@gmail.com</a>
+      <button class="btn ghost" id="copyMail" type="button">Copy email</button>
+      <a class="btn ghost" href="https://linkedin.com/in/vatssoni" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© <span id="yr"></span> Vatsal Soni · Mumbai</span><span class="mono">vatsalsoni.in</span><a href="#top">Back to top ↑</a></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
